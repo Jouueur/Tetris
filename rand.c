@@ -23,7 +23,6 @@ void save_score(int score, char name[50],int rank){
     FILE *f = fopen("Highscore.txt","w+");
     if(f!= NULL){
 
-        //fprintf(f,"1_");
         for(int i =0;i<strlen(name);i++){
             fprintf(f,"%c",name[i]);
         }       
