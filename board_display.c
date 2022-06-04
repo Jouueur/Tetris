@@ -18,7 +18,6 @@ void display_pieces_rotation(int piece){
 	for(int i =0;i<4;i++){
 		for(int j =0;j<4;j++){
 			for(int k =0;k<4;k++){
-				temp = pion(pieces[piece][i][j][k]);
 				printf("%c",pion(pieces[piece][j][i][k]));
 			}
 		printf("  ");
