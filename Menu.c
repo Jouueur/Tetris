@@ -2,6 +2,7 @@
 
 
 void print_first_menu(){ 
+    // Launch the game
     int choice;
 
     printf("************************************\n");
