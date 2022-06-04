@@ -20,7 +20,7 @@ int last_line_test(int board[ROWS][COLS]){
 
 void last_line_remove(int board[ROWS][COLS]){
     // Remove the full lines
-    //if(last_line_test(board) != 0){
+   
         
         for(int i = last_line_test(board); i>0;i--){
             for(int j = 1;j<COLS-1;j++){
