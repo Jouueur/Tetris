@@ -14,6 +14,7 @@
 
 
 void start_game(int board[ROWS][COLS]){
+	// The base of the game, start and end
     int col,rota,piece=0,score=0,highscore;
     char name[50],highscore_name[50];
     
@@ -21,13 +22,13 @@ void start_game(int board[ROWS][COLS]){
         
         for(int i = 0; i<4;i++){
             if(last_line_test(board) != 0){
-                last_line_remove(board);
+                last_line_remove(board);	// remove the full lines
                 score = score + 100;
             }
         }
         piece = rand_piece();
 
-        printf("Score : %d\n",score);
+        printf("Score : %d\n",score);	// show score
 
         display_pieces_rotation(piece);
         board_display(board,piece);
@@ -54,7 +55,7 @@ void start_game(int board[ROWS][COLS]){
 
 
         FILE *f = NULL;
-    f=fopen("Highscore.txt","r+");
+    f=fopen("Highscore.txt","r+");	// Highscore save
     if(f!= NULL){
         fscanf(f,"%s",highscore_name);
         fscanf(f,"%d",&highscore);
@@ -63,13 +64,13 @@ void start_game(int board[ROWS][COLS]){
     fclose(f);
 
     if(score > highscore){
-        printf("New highscore ! Insert your name:\n");
+        printf("New highscore ! Insert your name:\n");	// Ssave new highscore
         scanf("%s",name);
         save_score(score,name,1);
     }
     else{
         f=fopen("Highscore.txt","r+");
-        printf("Actual highscore : %s,%d points\n",highscore_name,highscore);
+        printf("Actual highscore : %s,%d points\n",highscore_name,highscore);	// print actual highscore
         fclose(f);
     }
 }
