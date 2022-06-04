@@ -7,8 +7,6 @@ char pion(int p){
 /* used to print the board */
 	if(p == 0)return ' ';
 	else if(p == 1)return 'x';
-	//else if(p == 2)return 'o';
-	//else if(p == 3)return 'O';
 	
 }
 
@@ -33,8 +31,9 @@ void display_pieces_rotation(int piece){
 }
 
 void board_display(int board[ROWS][COLS],int piece){
+	// Display the board game
+	
 	int p,a;
-
 
 	for(int i = 0; i<10;i++)printf(" %d",1+i);      //Cols numbers
 	
