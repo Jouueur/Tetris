@@ -6,6 +6,7 @@
 #include "rand.h"
 #include "score_test.h"
 
+void clear_scan();
 void place_high_piece();
 void start_game();
 
