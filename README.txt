@@ -6,3 +6,6 @@ Be careful, the col that you choose will be the furthest to the left of the piec
 If you make your piece exceed the board, the game will stop.
 
 Go play and try to beat the highscore !
+
+BROSSET MARIUS
+MARTIN LIAM
