@@ -28,7 +28,8 @@ void start_game(int board[ROWS][COLS]){
         }
         piece = rand_piece();
 
-        printf("Score : %d\n",score);	// show score
+        printf("Score : \033[34;01m%d\033[00m\n",score); // show score
+
 
         display_pieces_rotation(piece);
         board_display(board,piece);
