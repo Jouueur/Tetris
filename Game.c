@@ -25,11 +25,13 @@ void start_game(int board[ROWS][COLS]){
         do{
             printf("Choose the orientation: "); // Col ask
             scanf("%d",&rota);
+            clear_scan();
         }while(rota < 1 || rota > 4);
         
         do{
-            printf("\nChoose the col: ");   // Row ask
+            printf("\nChoose the col: ");   // Row ask           
             scanf("%d",&col);
+            clear_scan();
         }while(rota < 1 || rota > 10);
 
         put_L(board,col,piece,rota);
