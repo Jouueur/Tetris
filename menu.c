@@ -26,13 +26,3 @@ void print_first_menu(int board[ROWS][COLS]){
 
 }
 
-    do{
-        scanf("%d",&choice);
-    }while((choice != 1) && (choice != 2));
-
-    if(choice == 1)start_game(board);
-    else{
-        exit(1);
-    }
-
-}
