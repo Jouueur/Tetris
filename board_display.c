@@ -32,7 +32,7 @@ void display_pieces_rotation(int piece){
 void board_display(int board[ROWS][COLS],int piece){
 	// Display the board game
 	
-	int p,a;
+	int p,temp;
 
 	for(int i = 0; i<10;i++)printf(" %d",1+i);      //Cols numbers
 	
@@ -41,10 +41,10 @@ void board_display(int board[ROWS][COLS],int piece){
 	for(int i = 4; i<ROWS-1;i++){	
 		printf("|");
 		for(int j = 1; j<COLS-1;j++){                 //board display
-			a = board[i][j];              
+			temp = board[i][j];              
 
 			
-			printf("%c|",pion(a));
+			printf("%c|",pion(temp));
 			
 		}
 		
