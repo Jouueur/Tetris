@@ -41,8 +41,7 @@ int high_test(int board[ROWS][COLS]){
 
     for(int i=0;i<4;i++){
         for(int j=1;j<COLS-2;j++){
-            if(board[i][j] != 0)return 1;
-            
+            if(board[i][j] != 0)return 1;     
         }
     }
 }
