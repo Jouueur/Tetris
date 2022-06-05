@@ -16,7 +16,7 @@ void start_game(int board[ROWS][COLS]){
         }
         piece = rand_piece();
 
-        printf("Score : \033[34;01m%d\033[00m\n",score); // show score
+        printf("Score : \033[93;01m%d\033[00m\n",score); // show score
 
 
         display_pieces_rotation(piece);
@@ -53,7 +53,7 @@ void start_game(int board[ROWS][COLS]){
     fclose(f);
 
     if(score > highscore){
-        printf("New highscore ! Insert your name:\n");	// Ssave new highscore
+        printf("New highscore ! Insert your name:\n");	// Save new highscore
         scanf("%s",name);
         save_score(score,name,1);
     }
