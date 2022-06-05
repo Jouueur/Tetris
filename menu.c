@@ -16,7 +16,9 @@ void print_first_menu(int board[ROWS][COLS]){
     printf("************************************\033[00m\n");
 
     do{
+        
         scanf("%d",&choice);
+        clear_scan();
     }while((choice != 1) && (choice != 2));
 
     if(choice == 1)start_game(board);
