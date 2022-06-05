@@ -1,18 +1,6 @@
 #include "Game.h"
 
 
-
-
-/*void clear_scan(){
-    char c;
-    int res;
-    do{
-        res = fscanf(stdin,"%c",&c);
-    }while(res==1 && c !="\n");
-}*/
-
-
-
 void start_game(int board[ROWS][COLS]){
 	// The base of the game, start and end
     int col,rota,piece=0,score=0,highscore;
