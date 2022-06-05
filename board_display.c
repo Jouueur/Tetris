@@ -44,7 +44,7 @@ void board_display(int board[ROWS][COLS],int piece){
 		for(int j = 1; j<COLS-1;j++){                 //board display
 			a = board[i][j];   
 			if(board[i][j] == 0)printf("%c",pion(a));           
-			else if(board[i][j] == 1)printf("\x1b[91;5;155m%c",pion(a));
+			else if(board[i][j] == 1)printf("\x1b[91;5;155m%c",pion(a));	// add colors
 			else if(board[i][j] == 2)printf("\x1b[95;5;155m%c",pion(a));
 			else if(board[i][j] == 3)printf("\x1b[92;5;155m%c",pion(a));
 			else if(board[i][j] == 4)printf("\x1b[97;5;155m%c",pion(a));
