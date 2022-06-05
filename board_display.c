@@ -44,15 +44,15 @@ void board_display(int board[ROWS][COLS],int piece){
 		for(int j = 1; j<COLS-1;j++){                 //board display
 			a = board[i][j];   
 			if(board[i][j] == 0)printf("%c",pion(a));           
-			else if(board[i][j] == 1)printf("\x1b[91;5;155m%c",pion(a));	// add colors
-			else if(board[i][j] == 2)printf("\x1b[95;5;155m%c",pion(a));
-			else if(board[i][j] == 3)printf("\x1b[92;5;155m%c",pion(a));
-			else if(board[i][j] == 4)printf("\x1b[97;5;155m%c",pion(a));
-			else if(board[i][j] == 5)printf("\x1b[94;5;155m%c",pion(a));
-			else if(board[i][j] == 6)printf("\x1b[93;5;155m%c",pion(a));
-			else if(board[i][j] == 7)printf("\x1b[96;5;155m%c",pion(a));
+			else if(board[i][j] == 1)printf("\033[91;01m%c",pion(a));	// add colors
+			else if(board[i][j] == 2)printf("\033[92;01m%c",pion(a));
+			else if(board[i][j] == 3)printf("\033[93;01m%c",pion(a));
+			else if(board[i][j] == 4)printf("\033[94;01m%c",pion(a));
+			else if(board[i][j] == 5)printf("\033[95;01m%c",pion(a));
+			else if(board[i][j] == 6)printf("\033[96;01m%c",pion(a));
+			else if(board[i][j] == 7)printf("\033[97;01m%c",pion(a));
 			
-			printf("\x1b[0m|");
+			printf("\033[00m|");
 			
 		}
 		
